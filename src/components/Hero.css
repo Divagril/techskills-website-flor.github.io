@@ -1,0 +1,85 @@
+/* src/components/Hero.css */
+.hero-section {
+    /* Imagen de fondo placeholder - ¡REEMPLAZAR! */
+    background: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDR8fHRlY2hub2xvZ3l8ZW58MHx8fHwxNjE2NjYzMzY4&ixlib=rb-1.2.1&q=80&w=1920') no-repeat center center/cover;
+    color: white;
+    height: 90vh; /* Más alto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; /* Para la capa de superposición */
+    padding: 0 20px;
+    overflow: hidden; /* Para contener animaciones si salen */
+  }
+  
+  /* Capa oscura para mejorar legibilidad del texto */
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(20, 23, 28, 0.75); /* Más oscuro */
+    z-index: 1;
+  }
+  
+  /* Contenido sobre la capa */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.8em; /* Más grande */
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+  }
+  
+  .hero-content p {
+    font-size: 1.5em; /* Más grande */
+    margin-bottom: 35px;
+    color: #e0e0e0; /* Gris más claro */
+    font-weight: 300;
+  }
+  
+  .cta-button {
+    background-color: #61dafb;
+    color: #1f2228; /* Texto más oscuro para contraste */
+    padding: 15px 35px; /* Botón más grande */
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 50px; /* Botón redondeado */
+    border: 2px solid #61dafb;
+    transition: all 0.35s ease; /* Transición para todo */
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(97, 218, 251, 0.3);
+  }
+  
+  .cta-button:hover {
+    background-color: transparent; /* Fondo transparente */
+    color: #61dafb; /* Texto del color del borde */
+    transform: translateY(-4px) scale(1.05); /* Levanta y agranda */
+    box-shadow: 0 6px 15px rgba(97, 218, 251, 0.5);
+  }
+  
+  /* Media Query para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .hero-section {
+        height: 75vh;
+    }
+    .hero-content h1 {
+      font-size: 2.8em;
+    }
+    .hero-content p {
+      font-size: 1.2em;
+    }
+    .cta-button {
+      padding: 12px 28px;
+      font-size: 1.1em;
+    }
+  }

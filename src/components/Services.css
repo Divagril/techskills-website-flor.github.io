@@ -1,0 +1,115 @@
+/* src/components/Services.css */
+.service-section {
+    padding: 80px 20px;
+    text-align: center;
+    overflow: hidden; /* Para contener animaciones slide */
+  }
+  
+  .section-container {
+    max-width: 1100px; /* Limita el ancho del contenido */
+    margin: 0 auto;
+  }
+  
+  .service-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px; /* Más espacio */
+    color: #333;
+  }
+  
+  .service-section h3 {
+      font-size: 1.4em;
+      color: #444;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-weight: 600;
+  }
+  
+  /* Estilos específicos para cada fondo de sección */
+  .capacitacion-section {
+    background-color: #eaf7ff; /* Azul muy claro */
+  }
+  
+  .desarrollo-section {
+    background-color: #f8f9fa; /* Gris muy claro */
+  }
+  
+  .service-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .service-icon-wrapper {
+      margin-bottom: 25px; /* Espacio bajo el icono */
+      display: inline-block; /* Para que data-aos funcione bien */
+  }
+  
+  .service-icon {
+    font-size: 4em; /* Icono más grande */
+    color: #61dafb;
+    line-height: 1;
+    display: inline-block;
+  }
+  
+  /* Keyframes para la animación de pulso */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); /* Pulso más sutil */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Clase para aplicar la animación de pulso */
+  .pulse-animation {
+    animation: pulse 2.5s ease-in-out infinite; /* Más lento */
+  }
+  
+  .service-content p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  
+  .service-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px auto;
+    max-width: 550px; /* Ancho de la lista */
+    text-align: left;
+  }
+  
+  .service-list li {
+    background-color: #ffffff;
+    margin-bottom: 12px; /* Más separación */
+    padding: 15px 20px; /* Más padding interno */
+    border-radius: 8px; /* Bordes más redondeados */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Sombra sutil */
+    position: relative;
+    padding-left: 45px; /* Más espacio para el icono */
+    font-size: 1.05em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Icono check antes de cada item */
+  .service-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 15px; /* Posición del check */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #17a2b8; /* Azul verdoso */
+    font-weight: bold;
+    font-size: 1.3em; /* Check más grande */
+  }
+  
+  /* Efecto hover en items de lista */
+  .service-list li:hover {
+    transform: translateY(-3px) scale(1.02); /* Levanta y agranda un poco */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12); /* Sombra más pronunciada */
+    cursor: default; /* Indica que no es clickeable */
+  }

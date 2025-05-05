@@ -1,0 +1,34 @@
+/* src/index.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  background-color: #fff; /* Fondo base */
+  color: #333; /* Color de texto base */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Habilitar scroll suave para la navegación en la misma página */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reseteo básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ocultar overflow horizontal causado por algunas animaciones AOS antes de que inicien */
+body, html {
+  overflow-x: hidden;
+}

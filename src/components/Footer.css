@@ -1,0 +1,27 @@
+/* src/components/Footer.css */
+.app-footer {
+    background-color: #282c34; /* Mismo color que el header */
+    color: #aaa; /* Color de texto gris claro */
+    padding: 30px 20px; /* Más padding */
+    text-align: center;
+    font-size: 0.95em; /* Ligeramente más grande */
+    margin-top: auto; /* Empuja el footer al final */
+    border-top: 3px solid #61dafb; /* Línea superior decorativa */
+  }
+  
+  .app-footer p {
+      margin: 5px 0; /* Espacio entre líneas */
+      color: #bbb; /* Un poco más claro */
+  }
+  
+  .app-footer a {
+      color: #61dafb; /* Color de enlace */
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+  }
+  
+  .app-footer a:hover {
+      color: #ffffff; /* Blanco al hover */
+      text-decoration: underline;
+  }

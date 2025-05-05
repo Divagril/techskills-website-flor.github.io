@@ -1,0 +1,163 @@
+/* src/components/Contact.css */
+.contact-section {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .contact-section > p { /* El párrafo introductorio */
+    font-size: 1.2em; /* Más grande */
+    color: #555;
+    margin-bottom: 50px; /* Más espacio */
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacio entre info y form */
+    gap: 40px; /* Espacio entre columnas */
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .contact-info, .contact-form {
+    flex: 1; /* Intentan ocupar el mismo espacio */
+    min-width: 300px; /* Ancho mínimo antes de envolver */
+    margin-bottom: 30px;
+  }
+  
+  .contact-info h3, .contact-form h3 {
+    font-size: 1.8em; /* Títulos internos más grandes */
+    margin-bottom: 25px;
+    color: #444;
+    border-bottom: 3px solid #61dafb;
+    padding-bottom: 8px;
+    display: inline-block; /* Para que el borde se ajuste */
+  }
+  
+  .contact-info p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.7;
+    display: flex; /* Para alinear iconos si los usas */
+    align-items: center;
+  }
+  
+  .contact-info p i { /* Estilo básico para iconos (necesitas añadirlos) */
+      margin-right: 10px;
+      color: #61dafb;
+      font-size: 1.3em;
+  }
+  
+  .contact-info a {
+      color: #17a2b8; /* Color de enlace */
+      text-decoration: none;
+      transition: color 0.3s ease;
+  }
+  .contact-info a:hover {
+      color: #138496;
+      text-decoration: underline;
+  }
+  
+  .social-icons {
+      margin-top: 25px;
+  }
+  /* Estilos para iconos sociales (si los añades) */
+  .social-icons a {
+      color: #555;
+      font-size: 1.8em;
+      margin-right: 15px;
+      transition: color 0.3s ease, transform 0.3s ease;
+  }
+  .social-icons a:hover {
+      color: #61dafb;
+      transform: scale(1.1);
+  }
+  
+  
+  .form-group {
+    margin-bottom: 25px; /* Más espacio entre campos */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px; /* Más espacio para label */
+    font-weight: bold;
+    color: #444;
+    font-size: 1em;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 14px 18px; /* Más padding */
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Bordes más suaves */
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fdfdfd;
+  }
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+      color: #aaa;
+      font-style: italic;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 120px; /* Altura mínima */
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #61dafb;
+    box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.3); /* Anillo de focus */
+  }
+  
+  .submit-button {
+    background: linear-gradient(90deg, #61dafb, #17a2b8); /* Gradiente */
+    color: white;
+    padding: 15px 35px; /* Botón más grande */
+    border: none;
+    border-radius: 50px; /* Redondeado */
+    font-size: 1.15em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: inline-block; /* Para transform */
+  }
+  
+  .submit-button:hover {
+    transform: translateY(-3px) scale(1.03); /* Levanta y agranda */
+    box-shadow: 0 6px 15px rgba(97, 218, 251, 0.4); /* Sombra más pronunciada */
+    background: linear-gradient(90deg, #52c8e8, #1591a5); /* Gradiente al hover */
+  }
+  
+  /* Responsive para Contacto */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column; /* Apila en móvil */
+      gap: 30px;
+    }
+    .contact-info, .contact-form {
+      flex-basis: 100%; /* Ocupan todo el ancho */
+      text-align: center; /* Centra títulos */
+    }
+     .contact-info p, .form-group label {
+       text-align: left; /* Mantiene texto de párrafos y labels alineado a la izquierda */
+     }
+     .contact-info h3, .contact-form h3 {
+       display: block; /* El borde ocupa todo el ancho */
+     }
+  }
