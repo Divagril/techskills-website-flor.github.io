@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/techskills-website-flor.github.io/static/css/main.7d9dffdb.css",
+    "main.js": "/techskills-website-flor.github.io/static/js/main.c752a66e.js",
+    "index.html": "/techskills-website-flor.github.io/index.html",
+    "main.7d9dffdb.css.map": "/techskills-website-flor.github.io/static/css/main.7d9dffdb.css.map",
+    "main.c752a66e.js.map": "/techskills-website-flor.github.io/static/js/main.c752a66e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d9dffdb.css",
+    "static/js/main.c752a66e.js"
+  ]
+}
